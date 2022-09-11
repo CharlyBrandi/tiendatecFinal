@@ -1,0 +1,71 @@
+@import "variables";
+@import "formulario";
+@import "footer";
+@import "navbar";
+
+
+
+*{
+    
+    margin: 0%;
+    padding: 0%;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+}   
+
+.nosotros img{
+    width: 100%;
+  }
+
+  .collapse {
+    &:not(.show) {
+      display: none;
+    }
+  }
+
+
+/*Condicionales*/ 
+
+
+@mixin bordeColor ($tipo, $ancho, $color) {
+    border-width: $ancho;
+    border-style: $tipo;
+    border-color: $color;
+
+
+@if $color-secundario=="si" {
+    /*Relleno de pie*/
+    @for $i from 1 through 7 {
+        .pie-pagina#{$i}{
+            background-color: map-get($mapaColores, $i);
+        }
+        
+    }
+
+}
+
+
+
+@else if $color-sercundario== "no" {
+        @each $numero, $color in $mapaColores {
+        .pie-pagina#{$numero}{
+            @include bordeColor(double, 5px, $color )
+
+        }
+        
+    }
+ }
+ 
+ @else {
+        .div{
+        @extend .extra;
+     }
+ }
+
+
+ }
+
+
+
+ 
+   

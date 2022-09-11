@@ -1,0 +1,65 @@
+@import "variables";
+/*Formulario*/
+  
+.form-register{
+    width: 380px;
+    background: $color-secundario;
+    padding: 50px;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 30px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px rgb(241, 236, 236);
+  
+    h4 {
+    font-size: 30px;
+    margin-bottom: 30px;
+
+    p {
+      height: 40px;
+      padding: 15px;
+      text-align: center;
+      font-size: 18px;
+      line-height: 40px;
+    a {
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+
+    a:hover {
+        color: rgb(204, 17, 17);
+        text-decoration: underline;
+    
+      }
+    }
+   }
+  } 
+}
+  
+  
+  .controls {
+    width: 80%;
+    background: white;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+  }
+  
+  .form-register .botons {
+    width: 100%;
+    pointer-events: painted;
+    background: #9e0404;
+    cursor: pointer;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+  }
+
